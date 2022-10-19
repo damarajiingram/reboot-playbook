@@ -4,7 +4,7 @@
   #remote_user: root
   tasks:
     # Send the reboot command
-    - shell: shutdown -r now
+    - shell: shutdown -h now
 
     # This pause is mandatory, otherwise the existing control connection gets reused!
     - pause: seconds=30
