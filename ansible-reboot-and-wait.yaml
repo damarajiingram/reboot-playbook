@@ -1,7 +1,7 @@
 ---
 - name: Reboot a host and wait for it to return
   hosts: 192.168.30.22
-  remote_user: imid
+  #remote_user: root
   tasks:
     # Send the reboot command
     - shell: shutdown -r now
